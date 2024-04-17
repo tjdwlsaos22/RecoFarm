@@ -5,13 +5,14 @@ import 'package:new_recofarm_app/firebase_options.dart';
 import 'view/home.dart';
 
 /*
- 
-  Description : Main 
-  Date        : 
-  Author      : 
-  Updates     : 
-  Detail      : - 
-
+  * 
+  * Description : Main 
+  * Date        : 2024.04.17
+  * Author      : 
+  * Updates     : 
+  *   2024.04.17 by pdg
+  *     - main get x 사용할 수있도록 수정함 
+  *
 */
 
 void main() async {
@@ -37,4 +38,4 @@ class MyApp extends StatelessWidget {
       home: const Home(),
     );
   }
-}
+}// END
