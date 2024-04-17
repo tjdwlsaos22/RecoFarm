@@ -12,6 +12,7 @@ import 'view/home.dart';
   * Updates     : 
   *   2024.04.17 by pdg
   *     - main get x 사용할 수있도록 수정함 
+  *     - debug mode flag 없앰
   *
 */
 
@@ -29,7 +30,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'Reco-Farm Application',
+      localizationsDelegates: const [
+        // GlobalCupertinoLocalizations.delegate,
+        // GlobalMaterialLocalizations.delegate,
+        // GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: const [
+        Locale('ko', 'KR'),
+        Locale('en', 'US'),
+      ],
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
