@@ -32,7 +32,8 @@ dependencies:
   provider: ^6.1.2
 
 
-
+  # Card
+  card_swiper: ^3.0.1
 
   ## GET-PATH-HTTP  
   get: ^4.6.6
